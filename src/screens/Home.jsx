@@ -47,7 +47,7 @@ const Home = () => {
             setQue(que + 1);
           }}
         >
-          random
+          Get Random Question
         </button>
         <button
           className="btn btn-success m-2"
@@ -55,7 +55,7 @@ const Home = () => {
             showAns ? setShowAns(false) : setShowAns(true);
           }}
         >
-          {showAns ? "Show Ans" : "Hide Ans"}
+          {showAns ? "Show Answer" : "Hide Answer"}
         </button>
       </div>
     );
