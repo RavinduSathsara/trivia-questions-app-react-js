@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const AppNavBar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fw-bold">
-        <div class="container-fluid">
-          <Link class="navbar-brand" to="/">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fw-bold">
+        <div className="container-fluid">
+          <Link className="navbar-brand " to="/">
             Trivia Questions App
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -18,20 +18,20 @@ const AppNavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <Link class="nav-link active" aria-current="page" to="/">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav ms-auto ">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
-              <Link class="nav-link disabled" to="/">
-                Features
+              <Link className="nav-link disabled" to="/">
+                Disabled
               </Link>
-              <Link class="nav-link disabled" to="/">
-                Pricing
+              <Link className="nav-link disabled" to="/">
+                Disabled
               </Link>
-              <Link class="nav-link disabled" to="/">
+              <Link className="nav-link disabled" to="/">
                 Disabled
               </Link>
             </div>
