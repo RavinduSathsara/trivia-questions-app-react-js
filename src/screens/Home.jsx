@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ErrorMsg from "../components/ErrorMsg";
+import Loading from "../components/Loading";
 import Question from "../components/Question";
 
 const Home = () => {
@@ -27,9 +29,13 @@ const Home = () => {
       );
   }, [que]);
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <ErrorMsg msg={error.message} />;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   } else {
     return (
       <div className="container">
