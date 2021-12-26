@@ -5,7 +5,9 @@ const Question = (props) => {
     <div>
       <div className="alert alert-success mt-3 col-12" role="alert">
         <h4 className="alert-heading">Question no {props.queNo} !</h4>
-        <p>{props.que}</p>
+        <p>
+          {props.que === "" ? "Oops ! , Get Random que again !" : props.que}
+        </p>
         <hr />
         <p className="mb-0">
           answer :{" "}

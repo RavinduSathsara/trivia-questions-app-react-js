@@ -2,6 +2,16 @@ import React, { useState, useEffect } from "react";
 import ErrorMsg from "../components/ErrorMsg";
 import Loading from "../components/Loading";
 import Question from "../components/Question";
+import swal from "sweetalert";
+
+const myAlrt = () => {
+  swal({
+    title: "Thanks You!",
+    text: "For the feedback!",
+    icon: "success",
+    button: "Let's go!",
+  });
+};
 
 const Home = () => {
   const [error, setError] = useState(null);
@@ -62,6 +72,9 @@ const Home = () => {
           }}
         >
           {showAns ? "Show Answer" : "Hide Answer"}
+        </button>
+        <button className="btn btn-primary m-2" onClick={myAlrt}>
+          Like
         </button>
       </div>
     );
